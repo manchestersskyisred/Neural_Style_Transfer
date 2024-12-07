@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风格迁移模型</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../static/images/logo1.png" alt="左侧 Logo" class="logo">
+            <img src="../static/images/title.png" alt="网站标题" class="title-image">
+            <img src="../static/images/logo2.png" alt="右侧 Logo" class="logo">
+        </div>
+
+        <div class="content">
+            <!-- 输入部分 -->
+            <div class="input-section">
+                <h2>输入图片</h2>
+                <div class="image-preview">
+                    <label for="content_image">内容图片:</label>
+                    <img id="contentPreview" src="../static/images/placeholder.png" alt="内容图片占位">
+                    <input type="file" id="content_image" name="content_image" accept="image/*" required>
+                </div>
+                <div class="image-preview">
+                    <label for="style_image">风格图片:</label>
+                    <img id="stylePreview" src="../static/images/placehoder2.png" alt="风格图片占位">
+                    <input type="file" id="style_image" name="style_image" accept="image/*" required>
+                </div>
+            </div>
+
+            <!-- 生成结果 -->
+            <div class="result-section">
+                <h2>生成结果</h2>
+                <img id="resultImage" src="../static/images/placehoder3.png" alt="生成结果占位">
+                <a id="downloadBtn" href="#" download="result.jpg" class="btn">下载生成图片</a>
+            </div>
+        </div>
+
+        <button id="submitBtn" class="btn">提交并生成风格迁移</button>
+    </div>
+
+    <script src="../static/script/script.js"></script>
+</body>
+</html>
